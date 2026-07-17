@@ -17,7 +17,7 @@ const Employeeform=()=>{
             title: 'Image',
             dataIndex: 'image',
          
-            render: (t, r) => <img src={`${r.image}`} style={{width:'50px', height:'50px'}}/>
+            render: (t, r) => <img src={config.getSecureUrl(r.image)} style={{width:'50px', height:'50px'}}/>
          },
     
         {

@@ -27,7 +27,7 @@ const EmpProfile=() =>{
         <div className="">
           <div className=" text-center">
             <div className="">
-              <img src={currUser?.photo? currUser?.photo: "https://bootdey.com/img/Content/avatar/avatar7.png"} alt="Maxwell Admin" className="w-24 h-24 rounded-full mx-auto" />
+              <img src={currUser?.photo ? config.getSecureUrl(currUser.photo) : "https://bootdey.com/img/Content/avatar/avatar7.png"} alt="Maxwell Admin" className="w-24 h-24 rounded-full mx-auto" />
             </div>
             <span className="capitalize text-base font-semibold">{currUser?.firstname}</span><span className='capitalize text-base font-semibold'> {currUser?.lastname}</span>
             <h6 className=" text-gray-600 text-sm">{currUser?.email}</h6>

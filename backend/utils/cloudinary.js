@@ -15,7 +15,7 @@ const uploadOnCloudinary = async (files) => {
     const uploadPromises = files.map(async (file) => {
       const response = await cloudinary.uploader.upload(file.path);
       
-      return response.url;
+      return response.secure_url;
     });
 
     const urls = await Promise.all(uploadPromises);

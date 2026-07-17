@@ -105,7 +105,7 @@ const AllStaffTable = ({EmpList}) => {
       dataIndex: 'photo',
    
       render: (t, r) => <img 
-      src={r.photo ? r.photo : '/images/graph.png'} 
+      src={r.photo ? config.getSecureUrl(r.photo) : '/images/graph.png'} 
        style={{width:'50px', height:'50px'}}
        />
    },

@@ -17,7 +17,7 @@ const Managerteam=()=>{
             title: 'Image',
             dataIndex: 'photo',
          
-            render: (t, r) => <img src={`${r.photo}`} style={{width:'50px', height:'50px'}}/>
+            render: (t, r) => <img src={config.getSecureUrl(r.photo)} style={{width:'50px', height:'50px'}}/>
          },
     
         {

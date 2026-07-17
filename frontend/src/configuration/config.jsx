@@ -2,9 +2,10 @@
 
 const config = {
     baseURL: 'https://hrms-sfl0.onrender.com',
-
-    //     TicketProjectUrl : 'https://melodic-arcadia-417919.web.app'
-    // // Other configuration options...
+    getSecureUrl: (url) => {
+        if (!url) return '';
+        return url.replace(/^http:\/\//i, 'https://');
+    }
 };
 
 export default config;

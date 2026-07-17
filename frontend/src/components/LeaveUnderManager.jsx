@@ -17,7 +17,7 @@ const LeaveUnderManager=()=>{
           title: 'Image',
           dataIndex: 'employee',
           render: (employee, record) => (
-            <img  key={record._id} src={employee?.photo} style={{ width: '50px', height: '50px' }} alt="Employee" />
+            <img  key={record._id} src={config.getSecureUrl(employee?.photo)} style={{ width: '50px', height: '50px' }} alt="Employee" />
           )
         },
         {
