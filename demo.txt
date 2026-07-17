@@ -1,0 +1,328 @@
+================================================================
+        HRMS — CLIENT DEMO GUIDE
+        Human Resource Management System | Susa Labs
+================================================================
+  Duration  : 30 Minutes (Local Demo)
+  Demo URL  : http://localhost:5173
+  Audience  : Client / HR Head / Operations Manager
+================================================================
+
+
+----------------------------------------------------------------
+OPENING SCRIPT
+----------------------------------------------------------------
+"Today we will walk you through our HRMS — Human Resource
+Management System. It is a complete digital platform that
+manages all your HR operations in one place — employees,
+payroll, attendance, and leaves. No manual work, no lost files,
+no miscommunication."
+
+
+----------------------------------------------------------------
+DEMO SCHEDULE — 30 MINUTES
+----------------------------------------------------------------
+  1. Login & Role System          →  3 min
+  2. Admin Dashboard              →  4 min
+  3. Employee Management          →  6 min
+  4. Leave Management             →  5 min
+  5. Payroll & Payslip  ⭐        →  7 min   (Most Important)
+  6. Attendance + Projects        →  3 min
+  7. Q&A                          →  2 min
+----------------------------------------------------------------
+
+
+================================================================
+STEP 1 — Login & Role-Based Access   [ 3 min ]
+================================================================
+
+What to Show:
+  - Open http://localhost:5173
+  - Login as Admin → Admin dashboard opens
+  - Logout → Login as Employee → Employee panel opens
+  - Show Google login option
+
+Key Points to Say:
+  "Our system has 4 separate roles — Admin, Manager, HR,
+   and Employee. Each role sees only what is relevant to them."
+
+  "You can also login with your company Google account —
+   no separate password needed."
+
+  "After login, the system automatically redirects each user
+   to their own dedicated dashboard."
+
+Highlight:
+  ✅ Google OAuth — one-click login
+  ✅ 4 role-specific dashboards
+  ✅ Automatic redirect based on role
+
+
+================================================================
+STEP 2 — Admin Dashboard   [ 4 min ]
+================================================================
+
+What to Show:
+  - Login as Admin → go to /admin
+  - Show 4 metric cards:
+      • Total Staff count
+      • Total Active Projects
+      • Total Departments
+      • Pending Employee Applications
+  - Show Memo table, Staff list, Project summary
+
+Key Points to Say:
+  "This is the Admin Dashboard — the entire company status
+   visible at a single glance, with live real-time data."
+
+  "In any meeting, you can open this dashboard and instantly
+   tell how many staff members, projects, and pending requests
+   you have — no need to check spreadsheets."
+
+Highlight:
+  ✅ Live real-time data on page load
+  ✅ Memos + Staff + Projects all in one screen
+
+
+================================================================
+STEP 3 — Employee Management   [ 6 min ]
+================================================================
+
+Part A — Staff List & Profile   (/admin/staff)
+  - Show the full staff list
+  - Click on any employee profile
+  - Show: photo, designation, department, bank details,
+    uploaded documents
+
+Part B — New Employee Onboarding   (/admin/employee-forms)
+  - Show pending employee requests
+  - Explain: new employee signs up → uploads documents →
+    admin approves with one click → account is created
+  - Show the approval action
+
+Part C — Add Staff Directly   (/admin/staff/add-staff)
+  - Show the add staff form
+  - Photo upload, department, designation — all in one form
+
+Key Points to Say:
+  "Onboarding is completely paperless — the employee fills the
+   form, uploads documents, and the admin approves with one
+   click. The account is ready instantly."
+
+  "Every employee has a digital profile — documents, bank
+   details, designation, department all in one place. Nothing
+   gets lost."
+
+  "Employee ID is auto-generated — susa1001, susa1002 —
+   zero manual numbering."
+
+Highlight:
+  ✅ Auto Employee ID (susa1001, susa1002...)
+  ✅ Document upload — Resume, Offer Letter, Education, Experience
+  ✅ Cloudinary secure cloud storage — never lost
+  ✅ Department + Reporting Manager assignment
+
+
+================================================================
+STEP 4 — Leave Management   [ 5 min ]
+================================================================
+
+As Employee   (/employee/apply-leaves):
+  - Login as Employee
+  - Apply a leave — select type, dates, and reason
+  - Show leave quota: Annual 15 days, Casual 12 days, Sick 12
+
+As Manager   (/manager/leaves-request):
+  - Login as Manager
+  - Show team's pending leave requests
+  - Approve one leave, reject one with a reason
+
+As Admin   (/admin/leaves-status):
+  - Show all company leaves in one view
+
+Approval Flow:
+  Employee applies  →  Manager approves/rejects  →  Admin sees all
+
+Key Points to Say:
+  "The entire leave workflow is digital — employee applies,
+   manager reviews and approves or rejects, admin has full
+   visibility. No emails, no phone calls."
+
+  "Leave balance is automatically deducted when approved —
+   the system tracks everything."
+
+  "When a leave is rejected, the reason is sent to the
+   employee — complete transparency."
+
+  "Unpaid leaves are automatically considered in the
+   monthly payslip calculation."
+
+Highlight:
+  ✅ 3-level digital approval workflow
+  ✅ Auto leave balance deduction on approval
+  ✅ Reject with reason — professional process
+  ✅ Unpaid leave auto-deducted in payroll
+
+
+================================================================
+STEP 5 — Payroll & Payslip  ⭐   [ 7 min ]
+================================================================
+!! Spend the most time here — this is the biggest client pain point !!
+
+Part A — Salary Definition   (/admin/payroll/salary-defination)
+  - Show salary components: Basic, HRA, Allowances, Deductions
+
+Part B — Tax Definition   (/admin/payroll/tax-defination)
+  - Show tax slabs — fully customizable per company rules
+
+Part C — Generate Payslip   (/admin/payroll/create-payslip)
+  - Select employee, month, and year
+  - Click generate → payslip is ready
+  - Show the professional payslip format
+
+Part D — Employee Views Payslip   (/employee/payslip)
+  - Login as Employee
+  - Employee can view and download their own payslip
+
+Key Points to Say:
+  "Payroll is 100% automated — define salary components, set
+   tax slabs, and generate the payslip in one click. No Excel,
+   no manual calculation."
+
+  "Unpaid leaves are automatically deducted in the payslip —
+   zero manual adjustment needed."
+
+  "Employees can view and download their own payslip anytime —
+   they do not need to call HR every month."
+
+  "This eliminates salary calculation errors completely."
+
+Highlight:
+  ✅ End-to-end payroll automation
+  ✅ Salary + Tax + Leave deductions in one click
+  ✅ Employee self-service payslip portal
+  ✅ Zero manual calculation errors
+
+
+================================================================
+STEP 6 — Attendance + Projects   [ 3 min ]
+================================================================
+
+Attendance:
+  - Employee → /employee/attendance → Mark attendance
+  - Admin → /admin/attendance → View all employees attendance
+  - Admin → /admin/upload-holiday → Upload company holidays
+
+Projects:
+  - Admin → /admin/projects → Create and manage projects
+  - Manager → /manager/projects → View team and assigned projects
+  - Employee → /employee/projects → View assigned projects
+
+Key Points to Say:
+  "Attendance is fully digital — no paper registers, no
+   manual entry. Everything is recorded automatically."
+
+  "Project management is built into the same platform —
+   no need for a separate tool like Jira or Trello."
+
+
+================================================================
+WHY CHOOSE OUR HRMS
+================================================================
+
+  Feature                    Benefit
+  ─────────────────────────────────────────────────────────────
+  4 Role-Based Dashboards    Admin, Manager, HR, Employee —
+                             each sees only what they need
+  Google OAuth Login         Login with company Gmail — no
+                             extra passwords
+  Auto Employee ID           susa1001, susa1002 — no manual
+                             numbering ever
+  Payroll Automation         Salary + Tax + Leaves = 1-click
+                             payslip, zero errors
+  Leave Approval Workflow    Employee → Manager → Admin —
+                             digital, traceable, transparent
+  Cloud Document Storage     Resume, Offer Letter, Education —
+                             secure on Cloudinary, never lost
+  Built-in Project Mgmt      No need for separate project tool
+  Memos & Circulars          Office communication on record
+  Budget, Stock, Logistics   Operations managed in one platform
+  Cloud Hosted               Accessible 24/7 from anywhere
+
+
+================================================================
+COMMON CLIENT QUESTIONS & ANSWERS
+================================================================
+
+Q: How secure is the data?
+A: All data is stored in MongoDB cloud database. Files are on
+   Cloudinary (encrypted). JWT authentication is used. The
+   application runs over HTTPS. Unauthorized access is not
+   possible.
+
+Q: How many employees can it handle?
+A: MongoDB is a scalable cloud database. It can handle
+   thousands of employees without any performance issues and
+   scales automatically as the organization grows.
+
+Q: Will it work on mobile?
+A: Yes, the application has a responsive design and works
+   smoothly on mobile and tablet browsers.
+
+Q: Can we add our company branding?
+A: Yes — logo, colors, and company name can all be customized.
+   A fully white-label version is possible.
+
+Q: Will employees need training?
+A: The system is very simple and intuitive. One walkthrough
+   session is enough. We also provide onboarding support.
+
+Q: Are the tax calculations accurate?
+A: Tax slabs are defined by the admin according to the
+   company's own rules — fully customizable, no hardcoded
+   formulas.
+
+
+================================================================
+CLOSING SCRIPT
+================================================================
+"You have seen a complete HR management system that digitizes
+all your manual HR processes — from employee onboarding to
+payroll, from attendance to project tracking — everything in
+one platform.
+
+The biggest benefits are time savings, zero errors, and full
+transparency. Your HR team's routine work is reduced by 60-70%
+because the system handles it automatically.
+
+Do you have any questions? We can demonstrate any specific
+flow again right now."
+
+
+================================================================
+PRE-DEMO CHECKLIST
+================================================================
+  [ ]  Backend server running on localhost:5000
+  [ ]  Frontend running on localhost:5173
+  [ ]  MongoDB connection verified
+  [ ]  Admin login credentials ready
+  [ ]  Manager login credentials ready
+  [ ]  Employee login credentials ready
+  [ ]  Dummy data added — staff, projects, memos
+  [ ]  Screen / projector setup ready
+
+
+================================================================
+DEMO LOGIN CREDENTIALS
+================================================================
+  NOTE: Use separate test accounts — do not share production data
+
+  Role       Email                 Password
+  ─────────────────────────────────────────────
+  Admin      admin@demo.com        ____________
+  Manager    manager@demo.com      ____________
+  HR         hr@demo.com           ____________
+  Employee   employee@demo.com     ____________
+
+================================================================
+        Prepared by Susa Labs | HRMS Demo Guide | Confidential
+================================================================

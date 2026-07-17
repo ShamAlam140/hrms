@@ -1,0 +1,3 @@
+,,,,,,,,
+Sno,Name,ProductId,Category,Quantity,UnitPrice,TotalAmount,Supplier,Status
+,Product A,456,Electronics,3,200,900,ABC,In Stock

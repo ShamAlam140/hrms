@@ -1,0 +1,2 @@
+Sno,Name,ProductId,Category,Quantity,UnitPrice,TotalAmount,Supplier,Status
+,Product B,457,Stationary,3,200,900,ABC,In Stock
