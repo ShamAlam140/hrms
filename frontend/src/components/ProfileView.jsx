@@ -105,9 +105,9 @@ const ProfileView=() =>{
                             
                                 <div className="flex flex-col m-3">
   
-                                 <iframe  className ="" key={index} src={doc}/>
+                                 <iframe  className ="" key={index} src={config.getSecureUrl(doc)}/>
        
-                                 <a className="mt-6" href={doc} target="_blank" rel="noopener noreferrer">
+                                 <a className="mt-6" href={config.getSecureUrl(doc)} target="_blank" rel="noopener noreferrer">
           Click here to view
         </a>
                                 </div>

@@ -21,9 +21,9 @@ const EmployeePolicyView = ()=>{
                     
                         <div className="flex flex-col">
 
-                         <iframe key={index} src={policy?.policyDoc}/>
+                         <iframe key={index} src={config.getSecureUrl(policy?.policyDoc)}/>
 
-                         <a className="" href={policy?.policyDoc} target="_blank" rel="noopener noreferrer">
+                         <a className="" href={config.getSecureUrl(policy?.policyDoc)} target="_blank" rel="noopener noreferrer">
   Click here to view
 </a>
                         </div>
